@@ -1,0 +1,11 @@
+version: '2'
+
+services: 
+  jekyll:
+    image: sreeramnitin/jekyll
+    ports: 
+      - "80:4000"
+    # environment: 
+    #   - JEKYLL_NEW=true
+    volumes:
+      - ./src:/site
